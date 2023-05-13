@@ -35,5 +35,14 @@ namespace TurboGlide
         {
             btnStartGame.Cursor = Cursors.Hand;
         }
+
+        private void btnStartGame_Click(object sender, EventArgs e)
+        {
+            GameWindow gwf = new GameWindow();
+            if(gwf.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
     }
 }

@@ -46,6 +46,7 @@
             this.btnStartGame.TabIndex = 0;
             this.btnStartGame.Text = "Start Game";
             this.btnStartGame.UseVisualStyleBackColor = false;
+            this.btnStartGame.Click += new System.EventHandler(this.btnStartGame_Click);
             this.btnStartGame.MouseHover += new System.EventHandler(this.btnStartGame_MouseHover);
             // 
             // pbLogo
