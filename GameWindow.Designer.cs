@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameWindow));
             this.pbPlayerB = new System.Windows.Forms.PictureBox();
             this.pbPlayerA = new System.Windows.Forms.PictureBox();
             this.pbPuck = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayerB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayerA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPuck)).BeginInit();
@@ -67,6 +69,11 @@
             this.pbPuck.TabIndex = 2;
             this.pbPuck.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 20;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // GameWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -78,6 +85,9 @@
             this.Controls.Add(this.pbPlayerB);
             this.Name = "GameWindow";
             this.Text = "GameWindow";
+            this.Load += new System.EventHandler(this.GameWindow_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameWindow_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.GameWindow_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayerB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayerA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPuck)).EndInit();
@@ -90,5 +100,6 @@
         private System.Windows.Forms.PictureBox pbPlayerB;
         private System.Windows.Forms.PictureBox pbPlayerA;
         private System.Windows.Forms.PictureBox pbPuck;
+        private System.Windows.Forms.Timer timer1;
     }
 }
