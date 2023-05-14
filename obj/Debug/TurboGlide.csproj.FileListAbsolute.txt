@@ -31,3 +31,4 @@ C:\Users\Pc\Desktop\TurboGlide Project\TurboGlide\obj\Debug\TurboGlide.csproj.Ge
 C:\Users\Pc\Desktop\TurboGlide Project\TurboGlide\obj\Debug\TurboGlide.csproj.CoreCompileInputs.cache
 C:\Users\Pc\Desktop\TurboGlide Project\TurboGlide\obj\Debug\TurboGlide.exe
 C:\Users\Pc\Desktop\TurboGlide Project\TurboGlide\obj\Debug\TurboGlide.pdb
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Debug\TurboGlide.GameWindow.resources
