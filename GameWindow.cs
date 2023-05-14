@@ -133,7 +133,7 @@ namespace TurboGlide
                         bounce = -1;
                     }
                     puckSpeedX = (8 + speedBoost) * bounce;
-                    puckSpeedY = -(8 + speedBoost);
+                    puckSpeedY = 8 + speedBoost;
                 }
             }
             if (!hitB)
@@ -154,7 +154,7 @@ namespace TurboGlide
                         bounce = -1;
                     }
                     puckSpeedX = (-8 - speedBoost) * bounce;
-                    puckSpeedY = (8 - speedBoost);
+                    puckSpeedY = -8 - speedBoost;
                 }
             }
             if(pbPuck.Bounds.IntersectsWith(pbGoalA.Bounds))
