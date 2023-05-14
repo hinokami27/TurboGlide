@@ -49,7 +49,7 @@
             // 
             this.pbPlayerB.BackColor = System.Drawing.Color.Transparent;
             this.pbPlayerB.Image = ((System.Drawing.Image)(resources.GetObject("pbPlayerB.Image")));
-            this.pbPlayerB.Location = new System.Drawing.Point(219, 375);
+            this.pbPlayerB.Location = new System.Drawing.Point(373, 307);
             this.pbPlayerB.Name = "pbPlayerB";
             this.pbPlayerB.Size = new System.Drawing.Size(66, 66);
             this.pbPlayerB.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             this.pbPlayerA.BackColor = System.Drawing.Color.Transparent;
             this.pbPlayerA.Image = ((System.Drawing.Image)(resources.GetObject("pbPlayerA.Image")));
-            this.pbPlayerA.Location = new System.Drawing.Point(200, 220);
+            this.pbPlayerA.Location = new System.Drawing.Point(73, 72);
             this.pbPlayerA.Name = "pbPlayerA";
             this.pbPlayerA.Size = new System.Drawing.Size(66, 66);
             this.pbPlayerA.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             this.pbPuck.BackColor = System.Drawing.Color.Transparent;
             this.pbPuck.Image = ((System.Drawing.Image)(resources.GetObject("pbPuck.Image")));
-            this.pbPuck.Location = new System.Drawing.Point(300, 664);
+            this.pbPuck.Location = new System.Drawing.Point(208, 494);
             this.pbPuck.Name = "pbPuck";
             this.pbPuck.Size = new System.Drawing.Size(50, 50);
             this.pbPuck.TabIndex = 2;
@@ -122,11 +122,11 @@
             this.ClientSize = new System.Drawing.Size(466, 764);
             this.Controls.Add(this.lbPointsB);
             this.Controls.Add(this.lbPointsA);
-            this.Controls.Add(this.pbGoalA);
-            this.Controls.Add(this.pbGoalB);
             this.Controls.Add(this.pbPuck);
             this.Controls.Add(this.pbPlayerA);
             this.Controls.Add(this.pbPlayerB);
+            this.Controls.Add(this.pbGoalA);
+            this.Controls.Add(this.pbGoalB);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(482, 803);
             this.Name = "GameWindow";

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,11 +25,14 @@ namespace TurboGlide
 
         int p1Speed = 10;
         int p2Speed = 10;
-        int puckSpeedX= 5; 
-        int puckSpeedY= 5;
+        int puckSpeedX= 8; 
+        int puckSpeedY= 8;
 
         int PlayerAPoints = 0;
         int PlayerBPoints = 0;
+
+        bool hitA = false;
+        bool hitB = false;
         Random rnd = new Random();
         public int randomNum { get; set; }
 
@@ -108,30 +112,72 @@ namespace TurboGlide
             if(pbPuck.Top < 55 || pbPuck.Top > 664)
             {
                 puckSpeedY = -puckSpeedY;
+                hitA = false;
+                hitB = false;
             }
-            if (pbPuck.Bounds.IntersectsWith(pbPlayerA.Bounds))
+            if (!hitA)
             {
-                puckSpeedY = -puckSpeedY;
-              
-
+                if (pbPuck.Bounds.IntersectsWith(pbPlayerA.Bounds))
+                {
+                    //puckSpeedY = -puckSpeedY;
+                    int speedBoost = 0;
+                    int bounce = 1;
+                    hitA = true;
+                    hitB = false;
+                    if (rnd.Next() % 2 == 0)
+                    {
+                        speedBoost++;
+                        bounce = -1;
+                    }
+                    puckSpeedX = (8 + speedBoost) * bounce;
+                    puckSpeedY = -8 + speedBoost;
+                }
             }
-            if (pbPuck.Bounds.IntersectsWith(pbPlayerB.Bounds))
+            if (!hitB)
             {
-                puckSpeedY = -puckSpeedY;
-               
+                if (pbPuck.Bounds.IntersectsWith(pbPlayerB.Bounds))
+                {
+                    //puckSpeedY = -puckSpeedY;
+                    int speedBoost = 0;
+                    int bounce = 1;
+                    hitB = true;
+                    hitA = false;
+                    if (rnd.Next() % 2 == 0)
+                    {
+                        speedBoost++;
+                    }
+                    if (rnd.Next() % 2 == 0)
+                    { 
+                        bounce = -1;
+                    }
+                    puckSpeedX = (-8 - speedBoost) * bounce;
+                    puckSpeedY = 8 - speedBoost;
+                }
             }
             if(pbPuck.Bounds.IntersectsWith(pbGoalA.Bounds))
             {
                 PlayerBPoints+=1;
-                pbPuck.Location = new Point(208, 357);
+                pbPuck.Location = new Point(208, 225);
+                pbPlayerA.Location = new Point(200, 65);
+                pbPlayerB.Location = new Point(200, 638);
                 lbPointsB.Text = "Player B: " +PlayerBPoints.ToString();
-
+                hitA = false;
+                hitB = false;
+                puckSpeedX = 0;
+                puckSpeedY = 0;
+                     
             }
             if (pbPuck.Bounds.IntersectsWith(pbGoalB.Bounds))
             {
                 PlayerAPoints += 1;
-                pbPuck.Location = new Point(208, 357);
+                pbPuck.Location = new Point(208, 494);
+                pbPlayerA.Location = new Point(200, 65);
+                pbPlayerB.Location = new Point(200, 638);
                 lbPointsA.Text = "Player A: " + PlayerAPoints.ToString();
+                hitA = false;
+                hitB = false;
+                puckSpeedX = 0;
+                puckSpeedY = 0;
 
             }
 
