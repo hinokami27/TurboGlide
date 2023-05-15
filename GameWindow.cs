@@ -23,10 +23,10 @@ namespace TurboGlide
         bool goLeftB;
         bool goRightB;
 
-        int p1Speed = 7;
-        int p2Speed = 7;
-        int puckSpeedX= 8; 
-        int puckSpeedY= 13;
+        int p1Speed = 10;
+        int p2Speed = 10;
+        int puckSpeedX= 10; 
+        int puckSpeedY= 16;
 
         int PlayerAPoints = 0;
         int PlayerBPoints = 0;
@@ -42,7 +42,7 @@ namespace TurboGlide
             InitializeComponent();
             timer1.Start();
             DoubleBuffered = true;
-            
+
         }
 
         private void GameWindow_Load(object sender, EventArgs e)
@@ -53,8 +53,6 @@ namespace TurboGlide
             pbGoalB.Location = new Point(171, 709);
             pbGoalA.Location = new Point(171, 30);
             randomNum = rnd.Next();
-            //lbPointsA.Text = "Plaeyr A: ";
-            //lbPointsB.Text = "Player B: ";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -67,11 +65,11 @@ namespace TurboGlide
             {
                 pbPlayerA.Top += p1Speed;
             }
-            if(goLeftA == true && pbPlayerA.Left > 60)
+            if(goLeftA == true && pbPlayerA.Left > 65)
             {
                 pbPlayerA.Left -= p1Speed;
             }
-            if(goRightA == true && pbPlayerA.Left < 340)
+            if(goRightA == true && pbPlayerA.Left < 335)
             {
                 pbPlayerA.Left += p1Speed;
             }
@@ -84,26 +82,18 @@ namespace TurboGlide
             {
                 pbPlayerB.Top += p2Speed;
             }
-            if (goLeftB == true && pbPlayerB.Left > 60)
+            if (goLeftB == true && pbPlayerB.Left > 65)
             {
                 pbPlayerB.Left -= p2Speed;
             }
-            if (goRightB == true && pbPlayerB.Left < 340)
+            if (goRightB == true && pbPlayerB.Left < 335)
             {
                 pbPlayerB.Left += p2Speed;
             }
-            //Puck slide at GameStart to avoid 2player 1puck collision
-            //if (randomNum % 2 == 0)
-            //{
-            //    TODO:FIX ball going up @ GameStart
-            //    pbPuck.Top -= puckSpeedY;
-            //    pbPuck.Left += puckSpeedX;   
-            //}
-            //else
-            //{
-                pbPuck.Top += puckSpeedY;
-                pbPuck.Left += puckSpeedX;
-            //}
+
+            pbPuck.Top += puckSpeedY;
+            pbPuck.Left += puckSpeedX;
+
             if(pbPuck.Left < 60 || pbPuck.Left > 340)
             {
                 puckSpeedX = -puckSpeedX;
@@ -117,55 +107,44 @@ namespace TurboGlide
             if (!hitA)
             {
                 if (pbPuck.Bounds.IntersectsWith(pbPlayerA.Bounds))
-                {
-                    int speedBoost = 0;
+                {                
                     int bounce = 1;
                     hitA = true;
                     hitB = false;
                     if (rnd.Next() % 2 == 0)
                     {
-                        speedBoost++;
-                    }
-                    if (rnd.Next() % 2 == 0)
-                    {
                         bounce = -1;
                     }
-                    puckSpeedX = (8 + speedBoost) * bounce;
-                    puckSpeedY = 13 + speedBoost;
+                    puckSpeedX = 10  * bounce;
+                    puckSpeedY = 16 ;
                 }
             }
             if (!hitB)
             {
                 if (pbPuck.Bounds.IntersectsWith(pbPlayerB.Bounds))
                 {
-                    int speedBoost = 0;
                     int bounce = 1;
                     hitB = true;
-                    hitA = false;
-                    if (rnd.Next() % 2 == 0)
-                    {
-                        speedBoost++;
-                    }
+                    hitA = false;                 
                     if (rnd.Next() % 2 == 0)
                     { 
                         bounce = -1;
                     }
-                    puckSpeedX = (-8 - speedBoost) * bounce;
-                    puckSpeedY = -13 - speedBoost;
+                    puckSpeedX = -10  * bounce;
+                    puckSpeedY = -16 ;
                 }
             }
             if(pbPuck.Bounds.IntersectsWith(pbGoalA.Bounds))
             {
-                PlayerBPoints+=1;
+                PlayerBPoints += 1;
                 pbPuck.Location = new Point(208, 225);
                 pbPlayerA.Location = new Point(200, 65);
                 pbPlayerB.Location = new Point(200, 638);
-                //lbPointsB.Text = "Player B: " +PlayerBPoints.ToString();
                 hitA = false;
                 hitB = false;
                 puckSpeedX = 0;
                 puckSpeedY = 0;
-                refreshBackground();
+                RefreshBackground();
             }
             if (pbPuck.Bounds.IntersectsWith(pbGoalB.Bounds))
             {
@@ -178,7 +157,7 @@ namespace TurboGlide
                 hitB = false;
                 puckSpeedX = 0;
                 puckSpeedY = 0;
-                refreshBackground();
+                RefreshBackground();
             }
 
         }
@@ -201,7 +180,6 @@ namespace TurboGlide
             {
                 goRightA = true;
             }
-
             if (e.KeyCode == Keys.Up)
             {
                 goUpB = true;
@@ -219,8 +197,9 @@ namespace TurboGlide
                 goRightB = true;
             }
         }
-        public void refreshBackground(){
-            //TODO:DO the same with all pictures
+
+        public void RefreshBackground(){
+            //Changes background based on score
             if (PlayerAPoints == 1 && PlayerBPoints == 0)
             {
                 GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard10;
