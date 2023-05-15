@@ -113,6 +113,26 @@ namespace TurboGlide.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard04 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard05 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard05", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BaseBoard10 {
             get {
                 object obj = ResourceManager.GetObject("BaseBoard10", resourceCulture);
@@ -146,6 +166,26 @@ namespace TurboGlide.Properties {
         internal static System.Drawing.Bitmap BaseBoard13 {
             get {
                 object obj = ResourceManager.GetObject("BaseBoard13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard14 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard15 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard15", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +233,26 @@ namespace TurboGlide.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard24 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard25 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BaseBoard30 {
             get {
                 object obj = ResourceManager.GetObject("BaseBoard30", resourceCulture);
@@ -216,6 +276,146 @@ namespace TurboGlide.Properties {
         internal static System.Drawing.Bitmap BaseBoard32 {
             get {
                 object obj = ResourceManager.GetObject("BaseBoard32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard33 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard33", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard34 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard34", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard35 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard40 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard41 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard41", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard42 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard42", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard43 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard43", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard44 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard44", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard45 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard45", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard50 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard51 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard51", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard52 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard52", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard53 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard53", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BaseBoard54 {
+            get {
+                object obj = ResourceManager.GetObject("BaseBoard54", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

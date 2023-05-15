@@ -49,7 +49,7 @@
             // 
             this.pbPlayerB.BackColor = System.Drawing.Color.Transparent;
             this.pbPlayerB.Image = ((System.Drawing.Image)(resources.GetObject("pbPlayerB.Image")));
-            this.pbPlayerB.Location = new System.Drawing.Point(373, 307);
+            this.pbPlayerB.Location = new System.Drawing.Point(311, 459);
             this.pbPlayerB.Name = "pbPlayerB";
             this.pbPlayerB.Size = new System.Drawing.Size(66, 66);
             this.pbPlayerB.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             this.pbPlayerA.BackColor = System.Drawing.Color.Transparent;
             this.pbPlayerA.Image = ((System.Drawing.Image)(resources.GetObject("pbPlayerA.Image")));
-            this.pbPlayerA.Location = new System.Drawing.Point(73, 72);
+            this.pbPlayerA.Location = new System.Drawing.Point(89, 186);
             this.pbPlayerA.Name = "pbPlayerA";
             this.pbPlayerA.Size = new System.Drawing.Size(66, 66);
             this.pbPlayerA.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             this.pbPuck.BackColor = System.Drawing.Color.Transparent;
             this.pbPuck.Image = ((System.Drawing.Image)(resources.GetObject("pbPuck.Image")));
-            this.pbPuck.Location = new System.Drawing.Point(208, 494);
+            this.pbPuck.Location = new System.Drawing.Point(209, 359);
             this.pbPuck.Name = "pbPuck";
             this.pbPuck.Size = new System.Drawing.Size(50, 50);
             this.pbPuck.TabIndex = 2;
@@ -119,6 +119,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard00;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(466, 764);
             this.Controls.Add(this.lbPointsB);
             this.Controls.Add(this.lbPointsA);

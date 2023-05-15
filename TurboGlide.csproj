@@ -143,5 +143,65 @@
   <ItemGroup>
     <None Include="Resources\BaseBoard00.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard45.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard53.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBoard54.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
