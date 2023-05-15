@@ -23,10 +23,10 @@ namespace TurboGlide
         bool goLeftB;
         bool goRightB;
 
-        int p1Speed = 10;
-        int p2Speed = 10;
+        int p1Speed = 7;
+        int p2Speed = 7;
         int puckSpeedX= 8; 
-        int puckSpeedY= 8;
+        int puckSpeedY= 13;
 
         int PlayerAPoints = 0;
         int PlayerBPoints = 0;
@@ -53,9 +53,8 @@ namespace TurboGlide
             pbGoalB.Location = new Point(171, 709);
             pbGoalA.Location = new Point(171, 30);
             randomNum = rnd.Next();
-            Console.WriteLine(randomNum.ToString());
-            lbPointsA.Text = "Plaeyr A: ";
-            lbPointsB.Text = "Player B: ";
+            //lbPointsA.Text = "Plaeyr A: ";
+            //lbPointsB.Text = "Player B: ";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -94,17 +93,17 @@ namespace TurboGlide
                 pbPlayerB.Left += p2Speed;
             }
             //Puck slide at GameStart to avoid 2player 1puck collision
-            if (randomNum % 2 == 0)
-            {
-                pbPuck.Top -= puckSpeedY;
-                pbPuck.Left += puckSpeedX;
-
-            }
-            else
-            {
+            //if (randomNum % 2 == 0)
+            //{
+            //    TODO:FIX ball going up @ GameStart
+            //    pbPuck.Top -= puckSpeedY;
+            //    pbPuck.Left += puckSpeedX;   
+            //}
+            //else
+            //{
                 pbPuck.Top += puckSpeedY;
                 pbPuck.Left += puckSpeedX;
-            }
+            //}
             if(pbPuck.Left < 60 || pbPuck.Left > 340)
             {
                 puckSpeedX = -puckSpeedX;
@@ -119,7 +118,6 @@ namespace TurboGlide
             {
                 if (pbPuck.Bounds.IntersectsWith(pbPlayerA.Bounds))
                 {
-                    //puckSpeedY = -puckSpeedY;
                     int speedBoost = 0;
                     int bounce = 1;
                     hitA = true;
@@ -133,14 +131,13 @@ namespace TurboGlide
                         bounce = -1;
                     }
                     puckSpeedX = (8 + speedBoost) * bounce;
-                    puckSpeedY = 8 + speedBoost;
+                    puckSpeedY = 13 + speedBoost;
                 }
             }
             if (!hitB)
             {
                 if (pbPuck.Bounds.IntersectsWith(pbPlayerB.Bounds))
                 {
-                    //puckSpeedY = -puckSpeedY;
                     int speedBoost = 0;
                     int bounce = 1;
                     hitB = true;
@@ -154,7 +151,7 @@ namespace TurboGlide
                         bounce = -1;
                     }
                     puckSpeedX = (-8 - speedBoost) * bounce;
-                    puckSpeedY = -8 - speedBoost;
+                    puckSpeedY = -13 - speedBoost;
                 }
             }
             if(pbPuck.Bounds.IntersectsWith(pbGoalA.Bounds))
@@ -163,12 +160,12 @@ namespace TurboGlide
                 pbPuck.Location = new Point(208, 225);
                 pbPlayerA.Location = new Point(200, 65);
                 pbPlayerB.Location = new Point(200, 638);
-                lbPointsB.Text = "Player B: " +PlayerBPoints.ToString();
+                //lbPointsB.Text = "Player B: " +PlayerBPoints.ToString();
                 hitA = false;
                 hitB = false;
                 puckSpeedX = 0;
                 puckSpeedY = 0;
-                     
+                refreshBackground();
             }
             if (pbPuck.Bounds.IntersectsWith(pbGoalB.Bounds))
             {
@@ -176,12 +173,12 @@ namespace TurboGlide
                 pbPuck.Location = new Point(208, 494);
                 pbPlayerA.Location = new Point(200, 65);
                 pbPlayerB.Location = new Point(200, 638);
-                lbPointsA.Text = "Player A: " + PlayerAPoints.ToString();
+                //lbPointsA.Text = "Player A: " + PlayerAPoints.ToString();
                 hitA = false;
                 hitB = false;
                 puckSpeedX = 0;
                 puckSpeedY = 0;
-
+                refreshBackground();
             }
 
         }
@@ -221,7 +218,69 @@ namespace TurboGlide
             {
                 goRightB = true;
             }
-
+        }
+        public void refreshBackground(){
+            //TODO:DO the same with all pictures
+            if (PlayerAPoints == 1 && PlayerBPoints == 0)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard10;
+            }
+            if (PlayerAPoints == 2 && PlayerBPoints == 0)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard20;
+            }
+            if (PlayerAPoints == 3 && PlayerBPoints == 0)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard30;
+            }
+            if (PlayerAPoints == 0 && PlayerBPoints == 1)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard01;
+            }
+            if (PlayerAPoints == 0 && PlayerBPoints == 2)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard02;
+            }
+            if (PlayerAPoints == 0 && PlayerBPoints == 3)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard03;
+            }
+            if (PlayerAPoints == 1 && PlayerBPoints == 1)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard11;
+            }
+            if (PlayerAPoints == 1 && PlayerBPoints == 2)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard12;
+            }
+            if (PlayerAPoints == 1 && PlayerBPoints == 3)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard13;
+            }
+            if (PlayerAPoints == 2 && PlayerBPoints == 0)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard20;
+            }
+            if (PlayerAPoints == 2 && PlayerBPoints == 1)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard21;
+            }
+            if (PlayerAPoints == 2 && PlayerBPoints == 2)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard22;
+            }
+            if (PlayerAPoints == 2 && PlayerBPoints == 3)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard23;
+            }
+            if (PlayerAPoints == 3 && PlayerBPoints == 1)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard31;
+            }
+            if (PlayerAPoints == 3 && PlayerBPoints == 2)
+            {
+                GameWindow.ActiveForm.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard32;
+            }
         }
 
         private void GameWindow_KeyUp(object sender, KeyEventArgs e)
@@ -242,7 +301,6 @@ namespace TurboGlide
             {
                 goRightA = false;
             }
-
             if (e.KeyCode == Keys.Up)
             {
                 goUpB = false;

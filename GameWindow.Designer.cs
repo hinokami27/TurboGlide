@@ -118,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::TurboGlide.Properties.Resources.BaseBoard00;
             this.ClientSize = new System.Drawing.Size(466, 764);
             this.Controls.Add(this.lbPointsB);
             this.Controls.Add(this.lbPointsA);
