@@ -31,20 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnStartGame = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnStartGame
             // 
             this.btnStartGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(90)))), ((int)(((byte)(119)))));
+            this.btnStartGame.BackgroundImage = global::TurboGlide.Properties.Resources.ButtonBackground;
             this.btnStartGame.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.btnStartGame.Font = new System.Drawing.Font("Noto Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStartGame.ForeColor = System.Drawing.Color.Black;
+            this.btnStartGame.Font = new System.Drawing.Font("Ozone", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.btnStartGame.Location = new System.Drawing.Point(120, 460);
             this.btnStartGame.Name = "btnStartGame";
             this.btnStartGame.Size = new System.Drawing.Size(226, 75);
             this.btnStartGame.TabIndex = 0;
-            this.btnStartGame.Text = "Start Game";
+            this.btnStartGame.Text = "START GAME";
             this.btnStartGame.UseVisualStyleBackColor = false;
             this.btnStartGame.Click += new System.EventHandler(this.btnStartGame_Click);
             this.btnStartGame.MouseHover += new System.EventHandler(this.btnStartGame_MouseHover);
@@ -63,6 +66,29 @@
             this.pbLogo.TabStop = false;
             this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::TurboGlide.Properties.Resources.ButtonBackground;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Ozone", 21.75F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.button1.Location = new System.Drawing.Point(120, 541);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 100);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "RULES";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::TurboGlide.Properties.Resources.ControlsBtn;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(246, 541);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 100);
+            this.button2.TabIndex = 3;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -71,6 +97,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(466, 764);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.btnStartGame);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -88,6 +116,8 @@
 
         private System.Windows.Forms.Button btnStartGame;
         private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

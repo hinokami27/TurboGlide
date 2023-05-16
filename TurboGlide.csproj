@@ -203,5 +203,11 @@
   <ItemGroup>
     <None Include="Resources\BaseBoard54.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlsBtn.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
