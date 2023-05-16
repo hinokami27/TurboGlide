@@ -32,3 +32,17 @@ C:\Users\Pc\Desktop\TurboGlide Project\TurboGlide\obj\Debug\TurboGlide.csproj.Co
 C:\Users\Pc\Desktop\TurboGlide Project\TurboGlide\obj\Debug\TurboGlide.exe
 C:\Users\Pc\Desktop\TurboGlide Project\TurboGlide\obj\Debug\TurboGlide.pdb
 C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Debug\TurboGlide.GameWindow.resources
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\bin\Debug\TurboGlide.exe.config
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\bin\Debug\TurboGlide.exe
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\bin\Debug\TurboGlide.pdb
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.csproj.AssemblyReference.cache
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.Form1.resources
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.GameWindow.resources
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.Properties.Resources.resources
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.RulesForm.resources
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.csproj.GenerateResource.cache
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.exe
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.pdb
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.ControlsForm.resources
+C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.PWinForm.resources

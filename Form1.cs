@@ -25,12 +25,6 @@ namespace TurboGlide
             
         }
 
-        private void pbLogo_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
         private void btnStartGame_MouseHover(object sender, EventArgs e)
         {
             btnStartGame.Cursor = Cursors.Hand;
@@ -40,6 +34,24 @@ namespace TurboGlide
         {
             GameWindow gwf = new GameWindow();
             if(gwf.ShowDialog() == DialogResult.OK)
+            {
+                
+            }
+        }
+
+        private void btnRules_Click(object sender, EventArgs e)
+        {
+            RulesForm rf = new RulesForm();
+            if(rf.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ControlsForm cf = new ControlsForm();
+            if(cf.ShowDialog() == DialogResult.OK)
             {
 
             }
