@@ -42,6 +42,7 @@ namespace TurboGlide
             this.MaximumSize = new System.Drawing.Size(782, 487);
             this.MinimumSize = new System.Drawing.Size(782, 487);
             this.Name = "PWinForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TurboGlide";
             this.ResumeLayout(false);
 

@@ -143,6 +143,15 @@ namespace TurboGlide
                 puckSpeedX = 0;
                 puckSpeedY = 0;
                 RefreshBackground();
+                if (PlayerBPoints == 5)
+                {
+                    PWinForm w = new PWinForm();
+                    w.BackgroundImage = global::TurboGlide.Properties.Resources.BlueTeamWin;
+                    if (w.ShowDialog() == DialogResult.OK)
+                    {
+
+                    }
+                }
             }
             //Puck hits PlayerB's goal
             if (pbPuck.Bounds.IntersectsWith(pbGoalB.Bounds))
@@ -156,6 +165,15 @@ namespace TurboGlide
                 puckSpeedX = 0;
                 puckSpeedY = 0;
                 RefreshBackground();
+                if (PlayerAPoints == 5)
+                {
+                    PWinForm w = new PWinForm();
+                    w.BackgroundImage = global::TurboGlide.Properties.Resources.PinkTeamWin;
+                    if (w.ShowDialog() == DialogResult.OK)
+                    {
+
+                    }
+                }
             }
         }
         //Refresh the background to reflect the score
@@ -376,6 +394,5 @@ namespace TurboGlide
                 goRightB = false;
             }
         }
-
     }
 }

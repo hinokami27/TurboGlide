@@ -46,3 +46,6 @@ C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.exe
 C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.pdb
 C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.ControlsForm.resources
 C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.PWinForm.resources
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Debug\TurboGlide.ControlsForm.resources
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Debug\TurboGlide.PWinForm.resources
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Debug\TurboGlide.RulesForm.resources
