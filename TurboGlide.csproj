@@ -248,5 +248,8 @@
   <ItemGroup>
     <None Include="Resources\Controls.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RulesBtn.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

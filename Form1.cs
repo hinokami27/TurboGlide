@@ -20,9 +20,7 @@ namespace TurboGlide
         private void Form1_Load(object sender, EventArgs e)
         {
             pbLogo.BackColor = Color.Transparent;
-            btnStartGame.BackColor = Color.FromArgb(229, 90, 119);
-            
-            
+            btnStartGame.BackColor = Color.FromArgb(229, 90, 119);  
         }
 
         private void btnStartGame_MouseHover(object sender, EventArgs e)
@@ -32,29 +30,22 @@ namespace TurboGlide
 
         private void btnStartGame_Click(object sender, EventArgs e)
         {
-            GameWindow gwf = new GameWindow();
-            if(gwf.ShowDialog() == DialogResult.OK)
-            {
-                
-            }
+            this.Hide();
+            GameWindow gw = new GameWindow();
+            gw.ShowDialog();
+            this.Close();
         }
 
         private void btnRules_Click(object sender, EventArgs e)
         {
             RulesForm rf = new RulesForm();
-            if(rf.ShowDialog() == DialogResult.OK)
-            {
-
-            }
+            rf.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             ControlsForm cf = new ControlsForm();
-            if(cf.ShowDialog() == DialogResult.OK)
-            {
-
-            }
+            cf.ShowDialog();
         }
     }
 }

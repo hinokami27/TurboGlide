@@ -44,6 +44,8 @@ namespace TurboGlide
             this.Name = "PWinForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TurboGlide";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PWinForm_FormClosed);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PWinForm_KeyDown);
             this.ResumeLayout(false);
 
         }

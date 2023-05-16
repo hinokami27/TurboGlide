@@ -47,7 +47,6 @@
             this.btnStartGame.Name = "btnStartGame";
             this.btnStartGame.Size = new System.Drawing.Size(226, 75);
             this.btnStartGame.TabIndex = 0;
-            this.btnStartGame.Text = "START GAME";
             this.btnStartGame.UseVisualStyleBackColor = false;
             this.btnStartGame.Click += new System.EventHandler(this.btnStartGame_Click);
             this.btnStartGame.MouseHover += new System.EventHandler(this.btnStartGame_MouseHover);
@@ -67,7 +66,7 @@
             // 
             // btnRules
             // 
-            this.btnRules.BackgroundImage = global::TurboGlide.Properties.Resources.ButtonBackground;
+            this.btnRules.BackgroundImage = global::TurboGlide.Properties.Resources.RulesBtn;
             this.btnRules.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRules.Font = new System.Drawing.Font("Ozone", 21.75F, System.Drawing.FontStyle.Bold);
             this.btnRules.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
@@ -75,7 +74,6 @@
             this.btnRules.Name = "btnRules";
             this.btnRules.Size = new System.Drawing.Size(120, 100);
             this.btnRules.TabIndex = 2;
-            this.btnRules.Text = "RULES";
             this.btnRules.UseVisualStyleBackColor = true;
             this.btnRules.Click += new System.EventHandler(this.btnRules_Click);
             // 

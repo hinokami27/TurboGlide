@@ -44,6 +44,7 @@ namespace TurboGlide
             this.Name = "ControlsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controls";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ControlsForm_KeyDown);
             this.ResumeLayout(false);
 
         }

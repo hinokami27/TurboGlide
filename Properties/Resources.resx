@@ -121,8 +121,14 @@
   <data name="BaseBoard00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard00.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ControlsBtn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlsBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BaseBoard24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlueTeamWin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueTeamWin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BaseBoard50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard50.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,6 +163,9 @@
   <data name="ControlsBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ControlsBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Controls" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Controls.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BaseBoard54" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard54.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -165,9 +174,6 @@
   </data>
   <data name="Logo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BaseBoard13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BaseBoard13.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BaseBoard44" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard44.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,8 +205,8 @@
   <data name="BaseBoard10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BaseBoard13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BaseBoard13.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BaseBoard25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard25.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,6 +229,9 @@
   <data name="BaseBoard23" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard23.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Logo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BaseBoard40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard40.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -235,8 +244,17 @@
   <data name="BaseBoard34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard34.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PinkTeamWin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PinkTeamWin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rules" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rules.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BaseBoard42" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard42.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rules1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rules.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BaseBoard02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,19 +262,7 @@
   <data name="BaseBoard05" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BaseBoard05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BlueTeamWin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BlueTeamWin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ControlsBtn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ControlsBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PinkTeamWin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PinkTeamWin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rules" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rules.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Controls" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Controls.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RulesBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RulesBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

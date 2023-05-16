@@ -145,12 +145,14 @@ namespace TurboGlide
                 RefreshBackground();
                 if (PlayerBPoints == 5)
                 {
+                    
+                    this.Hide();
                     PWinForm w = new PWinForm();
                     w.BackgroundImage = global::TurboGlide.Properties.Resources.BlueTeamWin;
-                    if (w.ShowDialog() == DialogResult.OK)
-                    {
-
-                    }
+                    w.ShowDialog();
+                    this.Close();
+                    PlayerAPoints = 0;
+                    PlayerBPoints = 0;
                 }
             }
             //Puck hits PlayerB's goal
@@ -167,12 +169,13 @@ namespace TurboGlide
                 RefreshBackground();
                 if (PlayerAPoints == 5)
                 {
+                    this.Hide();
                     PWinForm w = new PWinForm();
                     w.BackgroundImage = global::TurboGlide.Properties.Resources.PinkTeamWin;
-                    if (w.ShowDialog() == DialogResult.OK)
-                    {
-
-                    }
+                    w.ShowDialog();
+                    this.Close();
+                    PlayerAPoints=0;
+                    PlayerBPoints = 0;
                 }
             }
         }
