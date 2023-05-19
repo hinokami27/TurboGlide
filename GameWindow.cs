@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace TurboGlide
 {
@@ -34,6 +35,9 @@ namespace TurboGlide
         bool hitA = false;
         bool hitB = false;
         Random rnd = new Random();
+
+        SoundPlayer speakerIntersect = new SoundPlayer("hitSound.wav");
+        SoundPlayer speakerGoal = new SoundPlayer("goalSound.wav");
 
         public GameWindow()
         {
@@ -92,10 +96,12 @@ namespace TurboGlide
             if(pbPuck.Left < 60 || pbPuck.Left > 340)
             {
                 puckSpeedX = -puckSpeedX;
+                speakerIntersect.Play();
             }
             if(pbPuck.Top < 55 || pbPuck.Top > 664)
             {
                 puckSpeedY = -puckSpeedY;
+                speakerIntersect.Play();
                 hitA = false;
                 hitB = false;
             }
@@ -103,7 +109,8 @@ namespace TurboGlide
             if (!hitA)
             {
                 if (pbPuck.Bounds.IntersectsWith(pbPlayerA.Bounds))
-                {                
+                {
+                    speakerIntersect.Play();
                     int bounce = 1;
                     hitA = true;
                     hitB = false;
@@ -120,6 +127,7 @@ namespace TurboGlide
             {
                 if (pbPuck.Bounds.IntersectsWith(pbPlayerB.Bounds))
                 {
+                    speakerIntersect.Play();
                     int bounce = 1;
                     hitB = true;
                     hitA = false;                 
@@ -135,6 +143,10 @@ namespace TurboGlide
             if(pbPuck.Bounds.IntersectsWith(pbGoalA.Bounds))
             {
                 PlayerBPoints += 1;
+                if (PlayerBPoints != 5)
+                {
+                    speakerGoal.Play();
+                }
                 pbPuck.Location = new Point(208, 225);
                 pbPlayerA.Location = new Point(200, 65);
                 pbPlayerB.Location = new Point(200, 637);
@@ -145,7 +157,6 @@ namespace TurboGlide
                 RefreshBackground();
                 if (PlayerBPoints == 5)
                 {
-                    
                     this.Hide();
                     PWinForm w = new PWinForm();
                     w.BackgroundImage = global::TurboGlide.Properties.Resources.BlueTeamWin;
@@ -159,6 +170,10 @@ namespace TurboGlide
             if (pbPuck.Bounds.IntersectsWith(pbGoalB.Bounds))
             {
                 PlayerAPoints += 1;
+                if (PlayerAPoints != 5)
+                {
+                    speakerGoal.Play();
+                }
                 pbPuck.Location = new Point(208, 494);
                 pbPlayerA.Location = new Point(200, 65);
                 pbPlayerB.Location = new Point(200, 637);
@@ -174,7 +189,7 @@ namespace TurboGlide
                     w.BackgroundImage = global::TurboGlide.Properties.Resources.PinkTeamWin;
                     w.ShowDialog();
                     this.Close();
-                    PlayerAPoints=0;
+                    PlayerAPoints =0;
                     PlayerBPoints = 0;
                 }
             }

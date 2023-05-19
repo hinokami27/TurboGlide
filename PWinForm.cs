@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace TurboGlide
 {
+
     public partial class PWinForm : Form
     {
+        SoundPlayer speakerVictory = new SoundPlayer("victorySound.wav");
         public PWinForm()
         {
             InitializeComponent();
@@ -31,6 +34,11 @@ namespace TurboGlide
             {
                 this.Close();
             }
+        }
+
+        private void PWinForm_Load(object sender, EventArgs e)
+        {
+            speakerVictory.Play();
         }
     }
 }
