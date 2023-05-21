@@ -19,15 +19,16 @@ namespace TurboGlide
         {
             InitializeComponent();
         }
-
+        //Show starting form on close
         private void PWinForm_FormClosed(object sender, FormClosedEventArgs e)
         {
+            speakerVictory.Stop();
             this.Hide();
             Form1 newGame = new Form1();
             newGame.ShowDialog();
             this.Close();
         }
-
+        //Set ESC as close button
         private void PWinForm_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
@@ -35,7 +36,7 @@ namespace TurboGlide
                 this.Close();
             }
         }
-
+        //Play victorySound on form load
         private void PWinForm_Load(object sender, EventArgs e)
         {
             speakerVictory.Play();

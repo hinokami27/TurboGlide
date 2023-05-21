@@ -76,6 +76,7 @@
             this.btnRules.TabIndex = 2;
             this.btnRules.UseVisualStyleBackColor = true;
             this.btnRules.Click += new System.EventHandler(this.btnRules_Click);
+            this.btnRules.MouseHover += new System.EventHandler(this.btnRules_MouseHover);
             // 
             // button2
             // 
@@ -87,6 +88,7 @@
             this.button2.TabIndex = 3;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
             // Form1
             // 

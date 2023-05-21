@@ -49,7 +49,7 @@
             // 
             this.pbPlayerB.BackColor = System.Drawing.Color.Transparent;
             this.pbPlayerB.Image = ((System.Drawing.Image)(resources.GetObject("pbPlayerB.Image")));
-            this.pbPlayerB.Location = new System.Drawing.Point(311, 459);
+            this.pbPlayerB.Location = new System.Drawing.Point(200, 638);
             this.pbPlayerB.Name = "pbPlayerB";
             this.pbPlayerB.Size = new System.Drawing.Size(66, 66);
             this.pbPlayerB.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             this.pbPlayerA.BackColor = System.Drawing.Color.Transparent;
             this.pbPlayerA.Image = ((System.Drawing.Image)(resources.GetObject("pbPlayerA.Image")));
-            this.pbPlayerA.Location = new System.Drawing.Point(89, 186);
+            this.pbPlayerA.Location = new System.Drawing.Point(200, 65);
             this.pbPlayerA.Name = "pbPlayerA";
             this.pbPlayerA.Size = new System.Drawing.Size(66, 66);
             this.pbPlayerA.TabIndex = 1;
@@ -132,7 +132,7 @@
             this.MaximumSize = new System.Drawing.Size(482, 803);
             this.Name = "GameWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TurboGlide";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.GameWindow_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameWindow_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.GameWindow_KeyUp);

@@ -45,6 +45,7 @@ namespace TurboGlide
             timer1.Start();
             DoubleBuffered = true;
         }
+        //Set positions for game start
         private void GameWindow_Load(object sender, EventArgs e)
         {
             pbPlayerA.Location = new Point(200, 65);

@@ -16,7 +16,7 @@ namespace TurboGlide
         {
             InitializeComponent();
         }
-
+        //Set ESC as close button
         private void RulesForm_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
