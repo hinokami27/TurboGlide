@@ -190,7 +190,7 @@ namespace TurboGlide
                     w.BackgroundImage = global::TurboGlide.Properties.Resources.PinkTeamWin;
                     w.ShowDialog();
                     this.Close();
-                    PlayerAPoints =0;
+                    PlayerAPoints = 0;
                     PlayerBPoints = 0;
                 }
             }

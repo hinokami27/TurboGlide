@@ -37,11 +37,11 @@ namespace TurboGlide
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TurboGlide.Properties.Resources.PinkTeamWin;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(766, 448);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(764, 468);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(782, 487);
-            this.MinimumSize = new System.Drawing.Size(782, 487);
+            this.MaximumSize = new System.Drawing.Size(780, 507);
+            this.MinimumSize = new System.Drawing.Size(780, 507);
             this.Name = "PWinForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TurboGlide";
