@@ -1,6 +1,3 @@
-C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\bin\Debug\TurboGlide.exe.config
-C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\bin\Debug\TurboGlide.exe
-C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\bin\Debug\TurboGlide.pdb
 C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Debug\TurboGlide.csproj.AssemblyReference.cache
 C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Debug\TurboGlide.csproj.SuggestedBindingRedirects.cache
 C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Debug\TurboGlide.Form1.resources
@@ -49,3 +46,6 @@ C:\Users\Pc\Desktop\TurboGlide\TurboGlide\obj\Debug\TurboGlide.PWinForm.resource
 C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Debug\TurboGlide.ControlsForm.resources
 C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Debug\TurboGlide.PWinForm.resources
 C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Debug\TurboGlide.RulesForm.resources
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\TurboGlide.exe.config
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\TurboGlide.exe
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\TurboGlide.pdb
