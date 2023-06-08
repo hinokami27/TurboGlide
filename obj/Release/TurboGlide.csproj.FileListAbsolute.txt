@@ -1,0 +1,15 @@
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Release\TurboGlide.csproj.AssemblyReference.cache
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Release\TurboGlide.csproj.SuggestedBindingRedirects.cache
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Release\TurboGlide.ControlsForm.resources
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Release\TurboGlide.Form1.resources
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Release\TurboGlide.GameWindow.resources
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Release\TurboGlide.Properties.Resources.resources
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Release\TurboGlide.PWinForm.resources
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Release\TurboGlide.RulesForm.resources
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Release\TurboGlide.csproj.GenerateResource.cache
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Release\TurboGlide.csproj.CoreCompileInputs.cache
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Release\TurboGlide.exe
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\obj\Release\TurboGlide.pdb
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\TurboGlide.exe.config
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\TurboGlide.exe
+C:\Users\Duci\Desktop\VP\TurboGlide\TurboGlide\TurboGlide.pdb
