@@ -1,4 +1,5 @@
 # TurboGlide
+#### Еnglish / [Македонски](#изработено-од)
 ### Developed by : 
 Dragan Golaboski, Viktor Bebek
 ## Description
@@ -31,8 +32,8 @@ The majority of the variables and logic of the application are contained within 
     //Adjustable speed of the puck and players
         int PlayerASpeed = 10;
         int PlayerBSpeed = 10;
-        int puckSpeedX= 10; 
-        int puckSpeedY= 10;
+        int puckSpeedX = 10; 
+        int puckSpeedY = 10;
     //The points/goals the players have scored so far
         int PlayerAPoints = 0;
         int PlayerBPoints = 0;
@@ -83,7 +84,7 @@ private void timer1_Tick(object sender, EventArgs e)
                 puckSpeedX = -puckSpeedX;
                 speakerIntersect.Play();
             }
-            //Work similar as the if statement above but for horizontal walls 
+            //Works similar to the if statement above but for horizontal walls 
             //and the hitA/B variables prevent a player from hogging the ball,
             //allowing the player 1 hit per bounce
             if(pbPuck.Top < 55 || pbPuck.Top > 664)
@@ -162,3 +163,176 @@ private void timer1_Tick(object sender, EventArgs e)
             //Same function exists for when the puck hits PlayerA's goal
         }
 ```    
+#
+
+### Изработено од:
+
+Драган Голабоски, Виктор Бебек
+
+## Опис
+
+Нашиот проект е верзија на класичната аркадна игра "Air Hockey", адаптирана за два играчи. Модерниот дизајн на апликацијата заедно со елементи од ретро аркадни игри носат носталгично чувство на играње на класичен емулатор како **MAME**.
+
+### Упатство
+
+При клик на копчето со натпис **[RULES]** се отвара нов прозорец со листа од правила за играта. Прозорецот се затвора со притискање на копчето **[X]** од самиот прозорец или со **[ESC]** на тастатурата.
+
+Копчето со слика од запчаник отвара нов прозорец каде корисниците можат да ги видат контролите за играта. Прозорецот се затвора со притискање на копчето **[X]** од самиот прозорец или со **[ESC]** на тастатурата.
+
+Откако корисниците ќе се запознаат со правилата и контролите на играта, може да започнат нова игра со притискање на копчето со натпис [**[START GAME]**](#instructions), при што се отвара нов прозорец каде што играта започнува.
+
+## Имплементација
+
+Повеќето од променливите и логиката на програмата се состојат во класата ```GameWindow```. Останатите форми/класи се надлежни за позиционирање и стилизирање на елементите, како и отварање/затворање на други форми/самите себеси.
+
+```
+ public partial class GameWindow : Form
+    {
+    //Овие променливи го контролираат движењето на играчотА
+        bool goUpA;
+        bool goDownA;
+        bool goLeftA;
+        bool goRightA;
+    //Овие променливи го контролираат движењето на играчотБ
+        bool goUpB;
+        bool goDownB;
+        bool goLeftB;
+        bool goRightB;
+    //Променлива брзина на играчите и пакот
+        int PlayerASpeed = 10;
+        int PlayerBSpeed = 10;
+        int puckSpeedX = 10; 
+        int puckSpeedY = 10;
+    //Поените освоени од страна на двајцата играчи
+        int PlayerAPoints = 0;
+        int PlayerBPoints = 0;
+    //Овие променливи спречуваат авто-голови и држење на топката
+        bool hitA = false;
+        bool hitB = false;
+    //Се користи за да се смени движењето на пакот по случаен агол   
+        Random rnd = new Random();
+    //Овозможуваат да се слушнат звучни ефекти кога ќе се постигне гол, при контакт со пакот и победа на еден играч
+        SoundPlayer speakerIntersect = new SoundPlayer("hitSound.wav");
+        SoundPlayer speakerGoal = new SoundPlayer("goalSound.wav");
+        }
+```
+Главната функција во програмата се извршува не секое отчукување на тајмерот и овозможува движење на играчите, колизија, постигнување голови, пратење на поените и услови за победа.
+
+```
+private void timer1_Tick(object sender, EventArgs e)
+        {
+            //На секое отчукување, ако играшот притиска копче за движење, играчот ќе се движи во таа насока
+            //сè додека е во дозволените граници
+            //Граници на играчотА
+            if(goUpA == true && pbPlayerA.Top > 55)
+            {
+                pbPlayerA.Top -= PlayerASpeed;
+            }
+            if(goDownA == true && pbPlayerA.Top < 315)
+            {
+                pbPlayerA.Top += PlayerASpeed;
+            }
+            if(goLeftA == true && pbPlayerA.Left > 70)
+            {
+                pbPlayerA.Left -= PlayerASpeed;
+            }
+            if(goRightA == true && pbPlayerA.Left < 330)
+            {
+                pbPlayerA.Left += PlayerASpeed;
+            }
+            //Иста функција постои и за играчотБ
+            
+            //Го движи пакот на почетокот од играта
+            pbPuck.Top += puckSpeedY;
+            pbPuck.Left += puckSpeedX;
+            //Граници на пакот
+            //Кога пакот удира во вертикален ѕид, тој ја менува насоката на неговото движење,
+            //со што "отскокнува" од ѕидот
+            if(pbPuck.Left < 60 || pbPuck.Left > 340)
+            {
+                puckSpeedX = -puckSpeedX;
+                speakerIntersect.Play();
+            }
+            //Работи на сличен начин како горната функција но за хоризонталната граница
+            //променливата hitA/B го спречува држењето на топката од страна на играчот ,
+            //дозволува само 1 удар при секое отскокнување
+            if(pbPuck.Top < 55 || pbPuck.Top > 664)
+            {
+                puckSpeedY = -puckSpeedY;
+                speakerIntersect.Play();
+                hitA = false;
+                hitB = false;
+            }
+            //Пакот го удира играчотА
+            if (!hitA)
+            {
+            //Проверуваме дали пакот се судрил со играчотА
+                if (pbPuck.Bounds.IntersectsWith(pbPlayerA.Bounds))
+                {
+                    //Звучен ефект
+                    speakerIntersect.Play();
+                    //Променливата bounce случајно го турка пакот лево или десно
+                    //при колизија со играчот
+                    int bounce = 1;
+                    //Спречува играчотА да го држи пакот
+                    hitA = true;
+                    hitB = false;
+                    if (rnd.Next() % 2 == 0)
+                    {
+                        bounce = -1;
+                    }
+                    //Го движи пакот при колизија со играчот
+                    puckSpeedX = 10  * bounce;
+                    puckSpeedY = 16 ;
+                }
+            }
+            //Постои иста функција и за колизија на пакот со играчотБ
+           
+            //Пакот удира во голот на играчотБ
+            //Проверуваме дали пакот се судрил со границите на голот на играчотБ
+            if (pbPuck.Bounds.IntersectsWith(pbGoalB.Bounds))
+            {
+                //Додава поен на играчотА
+                PlayerAPoints += 1;
+                if (PlayerAPoints != 5)
+                {
+                //Звучен ефект се пушта ако играчот нема победено
+                    speakerGoal.Play();
+                }
+                //Се ресетира позицијата на играчите,
+                //а пакот е доделен на играчот кој примил гол
+                pbPuck.Location = new Point(208, 494);
+                pbPlayerA.Location = new Point(200, 65);
+                pbPlayerB.Location = new Point(200, 637);
+                //Овозможуваат пакот да може било кој од играчите да го удри
+                hitA = false;
+                hitB = false;
+                //Ја правиме топката стационарна и 
+                //ја доделуваме на половината на играчот кој што примил гол
+                puckSpeedX = 0;
+                puckSpeedY = 0;
+                //Се променува позадината каде што е запишан резултатот
+                RefreshBackground();
+                //Проверуваме дали играчотА има доволно поени за победа
+                if (PlayerAPoints == 5)
+                {
+                //Се затвора главниот прозорец
+                //Отвара нов прозорец кој содржи порака за победникот
+                //и овозможува да се започне нова игра кога ќе се затвори прозорот
+                //Формата пушта победничка песна
+                //Се ресетира резултатот за нова игра
+                    this.Hide();
+                    PWinForm w = new PWinForm();
+                    w.BackgroundImage = global::TurboGlide.Properties.Resources.PinkTeamWin;
+                    w.ShowDialog();
+                    this.Close();
+                    PlayerAPoints = 0;
+                    PlayerBPoints = 0;
+                }
+            }
+            //Постои иста функција и за судир со голот на играчотА
+        }
+```
+
+
+
