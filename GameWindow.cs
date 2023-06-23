@@ -61,32 +61,32 @@ namespace TurboGlide
             {
                 pbPlayerA.Top -= PlayerASpeed;
             }
-            if(goDownA == true && pbPlayerA.Top < 315)
+            if(goDownA == true && pbPlayerA.Top < 314)
             {
                 pbPlayerA.Top += PlayerASpeed;
             }
-            if(goLeftA == true && pbPlayerA.Left > 70)
+            if(goLeftA == true && pbPlayerA.Left > 60)
             {
                 pbPlayerA.Left -= PlayerASpeed;
             }
-            if(goRightA == true && pbPlayerA.Left < 330)
+            if(goRightA == true && pbPlayerA.Left < 340)
             {
                 pbPlayerA.Left += PlayerASpeed;
             }
             //PlayerB boundaries
-            if (goUpB == true && pbPlayerB.Top > 388)
+            if (goUpB == true && pbPlayerB.Top > 390)
             {
                 pbPlayerB.Top -= PlayerBSpeed;
             }
-            if (goDownB == true && pbPlayerB.Top < 648)
+            if (goDownB == true && pbPlayerB.Top < 647)
             {
                 pbPlayerB.Top += PlayerBSpeed;
             }
-            if (goLeftB == true && pbPlayerB.Left > 70)
+            if (goLeftB == true && pbPlayerB.Left > 60)
             {
                 pbPlayerB.Left -= PlayerBSpeed;
             }
-            if (goRightB == true && pbPlayerB.Left < 330)
+            if (goRightB == true && pbPlayerB.Left < 340)
             {
                 pbPlayerB.Left += PlayerBSpeed;
             }
@@ -94,14 +94,27 @@ namespace TurboGlide
             pbPuck.Top += puckSpeedY;
             pbPuck.Left += puckSpeedX;
             //Puck boundaries
-            if(pbPuck.Left < 60 || pbPuck.Left > 340)
+
+            if (pbPuck.Left < 60)
             {
-                puckSpeedX = -puckSpeedX;
+                puckSpeedX = 10;
                 speakerIntersect.Play();
             }
-            if(pbPuck.Top < 55 || pbPuck.Top > 664)
+            if (pbPuck.Left > 340)
             {
-                puckSpeedY = -puckSpeedY;
+                puckSpeedX = -10;
+                speakerIntersect.Play();
+            }
+            if(pbPuck.Top < 55)
+            {
+                puckSpeedY = 16;
+                speakerIntersect.Play();
+                hitA = false;
+                hitB = false;
+            }
+            if (pbPuck.Top > 664)
+            {
+                puckSpeedY = -16;
                 speakerIntersect.Play();
                 hitA = false;
                 hitB = false;
