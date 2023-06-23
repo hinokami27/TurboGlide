@@ -59,15 +59,15 @@ private void timer1_Tick(object sender, EventArgs e)
             {
                 pbPlayerA.Top -= PlayerASpeed;
             }
-            if(goDownA == true && pbPlayerA.Top < 315)
+            if(goDownA == true && pbPlayerA.Top < 314)
             {
                 pbPlayerA.Top += PlayerASpeed;
             }
-            if(goLeftA == true && pbPlayerA.Left > 70)
+            if(goLeftA == true && pbPlayerA.Left > 60)
             {
                 pbPlayerA.Left -= PlayerASpeed;
             }
-            if(goRightA == true && pbPlayerA.Left < 330)
+            if(goRightA == true && pbPlayerA.Left < 340)
             {
                 pbPlayerA.Left += PlayerASpeed;
             }
@@ -79,17 +79,29 @@ private void timer1_Tick(object sender, EventArgs e)
             //Puck boundaries
             //When the puck hits a vertical wall, it reverses the direction of its movement,
             //effectively "bouncing off" the wall, also plays a colliding sound effect
-            if(pbPuck.Left < 60 || pbPuck.Left > 340)
+            if (pbPuck.Left < 60)
             {
-                puckSpeedX = -puckSpeedX;
+                puckSpeedX = 10;
+                speakerIntersect.Play();
+            }
+            if (pbPuck.Left > 340)
+            {
+                puckSpeedX = -10;
                 speakerIntersect.Play();
             }
             //Works similar to the if statement above but for horizontal walls 
             //and the hitA/B variables prevent a player from hogging the ball,
             //allowing the player 1 hit per bounce
-            if(pbPuck.Top < 55 || pbPuck.Top > 664)
+            if(pbPuck.Top < 55)
             {
-                puckSpeedY = -puckSpeedY;
+                puckSpeedY = 16;
+                speakerIntersect.Play();
+                hitA = false;
+                hitB = false;
+            }
+            if (pbPuck.Top > 664)
+            {
+                puckSpeedY = -16;
                 speakerIntersect.Play();
                 hitA = false;
                 hitB = false;
