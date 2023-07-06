@@ -6,6 +6,8 @@ Dragan Golaboski, Viktor Bebek
 Our project is a local multiplayer implementation of the classic Air Hockey arcade game. We've incorporated a modern design alongside retro gaming elements that enhance the competitive features of a *1 keyboard 2 players* style game, which also brings out the nostalgic feeling of playing on a classic arcade game emulator like **MAME**.
 ### Instructions
 
+Download the repo, then launch the TurboGlide.exe file after unzipping the project folder.
+
 ![mainWindow](https://github.com/hinokami27/TurboGlide/assets/106191814/44ee39e7-1565-4b86-8512-2f82699e01d9)
 
 Clicking the bottom button labeled **[RULES]** opens a new form that contains a list of rules and objectives of the game. The users can close this form by pressing the **[X]** in the top right corner or the **ESC** key on the keyboard.
@@ -186,6 +188,8 @@ private void timer1_Tick(object sender, EventArgs e)
 Нашиот проект е верзија на класичната аркадна игра "Air Hockey", адаптирана за два играчи. Модерниот дизајн на апликацијата заедно со елементи од ретро аркадни игри носат носталгично чувство на играње на класичен емулатор како **MAME**.
 
 ### Упатство
+
+Откако ќе го симнете zip фолдерот, отпакувајте го и отворете го TurboGlide.exe документот.
 
 При клик на копчето со натпис **[RULES]** се отвара нов прозорец со листа од правила за играта. Прозорецот се затвора со притискање на копчето **[X]** од самиот прозорец или со **[ESC]** на тастатурата.
 
